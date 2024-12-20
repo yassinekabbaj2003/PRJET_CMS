@@ -1,0 +1,4 @@
+[20-Dec-2024 17:54:23 UTC] PHP Warning:  Undefined array key "editor_post_id" in C:\Users\hp\Local Sites\ecommerce\app\public\wp-content\plugins\elementor\modules\history\revisions-manager.php on line 363
+[20-Dec-2024 18:07:25 UTC] PHP Warning:  Undefined array key "editor_post_id" in C:\Users\hp\Local Sites\ecommerce\app\public\wp-content\plugins\pro-elements\modules\theme-builder\classes\conditions-manager.php on line 182
+[20-Dec-2024 18:07:25 UTC] PHP Warning:  Undefined array key "editor_post_id" in C:\Users\hp\Local Sites\ecommerce\app\public\wp-content\plugins\elementor\modules\history\revisions-manager.php on line 363
+[20-Dec-2024 18:18:57 UTC] PHP Warning:  Undefined array key "editor_post_id" in C:\Users\hp\Local Sites\ecommerce\app\public\wp-content\plugins\elementor\modules\history\revisions-manager.php on line 363
