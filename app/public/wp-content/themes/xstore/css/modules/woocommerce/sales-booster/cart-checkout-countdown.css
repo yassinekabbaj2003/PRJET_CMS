@@ -1,0 +1,32 @@
+.sales-booster-cart-countdown {
+  color: var(--et_dark-2-white);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  font-size: var(--p-font-size, 1.14rem);
+  text-transform: none;
+  padding: 2.3vw 0;
+  margin-bottom: 2.3vw;
+}
+.cart-checkout-nav ~ .sales-booster-cart-countdown {
+  margin-top: -2.3vw;
+}
+.cart-checkout-nav .sales-booster-cart-countdown {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.sales-booster-cart-countdown:not(.finished) .cart-countdown-expired-message,
+.sales-booster-cart-countdown.finished .cart-countdown-message {
+  display: none;
+}
+.sales-booster-cart-countdown .cart-countdown-time {
+  font-weight: bold;
+}

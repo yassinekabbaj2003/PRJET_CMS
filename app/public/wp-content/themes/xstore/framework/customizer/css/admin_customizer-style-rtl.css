@@ -1,0 +1,100 @@
+button.collapse-sidebar.button .collapse-sidebar-arrow:before {
+    content: "\f345";
+    left: auto;
+    right: -4px;
+    transform: none;
+}
+
+#customize-save-button-wrapper {
+    right: auto;
+    left: 17px;
+}
+
+#customize-footer-actions .collapse-sidebar.button {
+    left: auto;
+    right: 100%;
+}
+
+.customize-controls-close {
+    float: left;
+    margin-right: 0;
+}
+
+.user-preferences {
+    left: auto;
+    right: 15px;
+}
+
+#customize-theme-controls .accordion-section-title:before, #et_customizer-search-results .accordion-section-title:before {
+    left: auto;
+    right: 18px
+}
+
+#customize-outer-theme-controls .accordion-section-title:after, #customize-theme-controls .accordion-section-title:after {
+    right: auto;
+    left: 18px;
+}
+
+.collapsed #customize-footer-actions .collapse-sidebar.button {
+    left: auto;
+    right: 100%;
+}
+
+/* select2 */
+.wp-customizer .select2-container .select2-selection--single, .wp-customizer select {
+    background-position: 12px 50%;
+}
+
+.wp-customizer .select2-container--default .select2-search--dropdown .select2-search__field {
+    background-position: 5px center !important;
+}
+
+/* kirki fields */
+.customize-control-kirki-toggle label .description {
+    padding-left: 50px;
+    padding-right: 0;
+}
+
+.wp-picker-container .wp-color-result.button {
+    padding: 0 0 0 30px;
+}
+
+.customize-control-kirki-slider .wrapper .value[data-info]:before {
+    right: auto;
+    left: 0;
+}
+
+.customize-control-kirki-toggle .switch:before {
+    right: auto;
+    left: 0.4em;
+}
+
+.customize-control-kirki-toggle .switch:after {
+    left: calc(100% - 1.7em*2 - .4em);
+    right: auto;
+    transform: translate3d(100%, -50%, 0);
+}
+
+.customize-control-kirki-toggle input:checked + .switch:before {
+    left: auto;
+    right: 0.3em;
+}
+
+.customize-control-kirki-toggle input:checked + .switch:after {
+    left: 0.4em;
+    transform: translateY(-50%);
+}
+
+.customize-control-repeater .repeater-row-header .dashicons {
+    right: auto;
+    left: 12px;
+}
+
+.customize-control-kirki-sortable ul.ui-sortable li .dashicons.dashicons-menu {
+    float: left;
+}
+
+.rtl .customize-control-kirki-color .wp-color-result .color-alpha {
+    left: 0 !important;
+    right: auto;
+}

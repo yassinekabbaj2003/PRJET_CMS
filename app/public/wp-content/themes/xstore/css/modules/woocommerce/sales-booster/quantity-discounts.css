@@ -1,0 +1,107 @@
+.sales-booster-quantity-discounts-wrapper {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.product_meta > .sales-booster-quantity-discounts-wrapper {
+  display: block;
+}
+.sales-booster-quantity-discounts {
+  border: 1px solid var(--et_border-color);
+  padding: 5px 25px;
+}
+.sales-booster-quantity-discounts .quantity-discount-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 0;
+  margin: var(--rows-gap, 0px) 0;
+  --h5-size-proportion: 1.14;
+}
+@media (hover: hover) {
+  .sales-booster-quantity-discounts .quantity-discount-item:not(:hover) .quantity {
+    -webkit-transform: translateY(7px);
+            transform: translateY(7px);
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+.sales-booster-quantity-discounts .quantity-discount-item + .quantity-discount-item {
+  border-top: 1px solid var(--et_border-color);
+}
+.sales-booster-quantity-discounts .quantity-discount-title {
+  display: block;
+}
+.sales-booster-quantity-discounts .quantity-discount-name {
+  display: block;
+  margin-bottom: 0px;
+}
+.sales-booster-quantity-discounts .quantity-discount-add {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.sales-booster-quantity-discounts .quantity-discount-add .quantity {
+  margin: 0;
+  -webkit-margin-start: 10px;
+          margin-inline-start: 10px;
+}
+.sales-booster-quantity-discounts .quantity-discount-add button .et-icon:only-child,
+.sales-booster-quantity-discounts .quantity-discount-add button .et-loader + .et-icon:last-child {
+  font-size: 1.4em;
+}
+.sales-booster-quantity-discounts .quantity-discount-suggest {
+  font-size: 1rem;
+  margin-top: 5px;
+}
+@media only screen and (max-width: 768px) {
+  .sales-booster-quantity-discounts .quantity-discount-suggest {
+    display: none;
+  }
+}
+.sales-booster-quantity-discounts .add_to_cart_button.button {
+  min-width: unset;
+  height: auto;
+  font-size: 0.85rem;
+  padding-top: 0.95rem;
+  padding-bottom: 0.95rem;
+  background-color: var(--et_btn-dark-bg-color);
+  border: 1px solid var(--et_btn-dark-br-color);
+  color: var(--et_btn-dark-color);
+  -webkit-text-fill-color: currentColor;
+  white-space: nowrap;
+  margin-right: 0;
+  margin-left: 0;
+  -webkit-margin-start: 15px;
+          margin-inline-start: 15px;
+  --loader-side-color: var(--et_btn-dark-color);
+}
+.sales-booster-quantity-discounts .add_to_cart_button.button:hover {
+  background-color: var(--et_btn-dark-bg-color-hover);
+  border-color: var(--et_btn-dark-br-color-hover);
+  color: var(--et_btn-dark-color-hover);
+  --loader-side-color: var(--et_btn-dark-color-hover);
+}
+.et-quick-view-wrapper .sales-booster-quantity-discounts .quantity-discount-add {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.et-quick-view-wrapper .sales-booster-quantity-discounts .quantity-discount-add .quantity {
+  margin-bottom: 10px;
+}
+.et-quick-view-wrapper .sales-booster-quantity-discounts .quantity-discount-suggest {
+  display: none;
+}

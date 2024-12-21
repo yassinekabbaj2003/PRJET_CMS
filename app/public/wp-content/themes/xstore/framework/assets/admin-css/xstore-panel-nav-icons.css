@@ -1,0 +1,96 @@
+@font-face {
+  font-family: 'xstore-panel-icons';
+  src:  url('../fonts/panel/xstore-panel-icons.eot?84rjq2');
+  src:  url('../fonts/panel/xstore-panel-icons.eot?84rjq2#iefix') format('embedded-opentype'),
+    url('../fonts/panel/xstore-panel-icons.ttf?84rjq2') format('truetype'),
+    url('../fonts/panel/xstore-panel-icons.woff?84rjq2') format('woff'),
+    url('../fonts/panel/xstore-panel-icons.svg?84rjq2#xstore-panel-icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+.et-panel-nav-icon {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'xstore-panel-icons' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.et-panel-nav-static-blocks:before {
+  content: "\e90f";
+}
+.et-panel-nav-white-label:before {
+  content: "\e916";
+}
+.et-panel-nav-additional-pages:before {
+  content: "\e900";
+}
+.et-panel-nav-amp-xstore:before {
+  content: "\e901";
+}
+.et-panel-nav-api-integrations:before {
+  content: "\e902";
+}
+.et-panel-nav-changelog:before {
+  content: "\e903";
+}
+.et-panel-nav-custom-fonts:before {
+  content: "\e904";
+}
+.et-panel-nav-email-builder:before {
+  content: "\e905";
+}
+.et-panel-nav-import-demos:before {
+  content: "\e906";
+}
+.et-panel-nav-maintenance-mode:before {
+  content: "\e907";
+}
+.et-panel-nav-open-ai:before {
+  content: "\e908";
+}
+.et-panel-nav-patcher:before {
+  content: "\e909";
+}
+.et-panel-nav-plugins-installer:before {
+  content: "\e90a";
+}
+.et-panel-nav-portfolio:before {
+  content: "\e90b";
+}
+.et-panel-nav-sales-booster:before {
+  content: "\e90c";
+}
+.et-panel-nav-social-authentication:before {
+  content: "\e90d";
+}
+.et-panel-nav-speed-optimization:before {
+  content: "\e90e";
+}
+.et-panel-nav-system-status:before {
+  content: "\e910";
+}
+.et-panel-nav-theme-options:before {
+  content: "\e911";
+}
+.et-panel-nav-tutorials-support:before {
+  content: "\e912";
+}
+.et-panel-nav-welcome:before {
+  content: "\e913";
+}
+.et-panel-nav-widgets:before {
+  content: "\e914";
+}
+.et-panel-nav-xstore-builders:before {
+  content: "\e915";
+}

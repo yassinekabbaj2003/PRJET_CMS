@@ -1,0 +1,114 @@
+.elementor-panel .eight_theme-elementor-icon {
+    color: var(--et-elementor-widget-icon-color, #fff);
+    background-color: var(--et-elementor-widget-icon-bg-color, #a4004f);
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 16px;
+    margin-top: -4px;
+    display: inline-block;
+    margin-bottom: -5px;
+    box-shadow: 0 0 1px var(--et-elementor-widget-icon-color, #fff);
+}
+
+.eight_theme-elementor-deprecated:after {
+    content: 'Deprecated';
+    text-transform: uppercase;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #eee;
+    font-size: 7px;
+    font-family: Roboto,Arial,Helvetica,Verdana,sans-serif;
+    color: #222;
+    padding: 3px 3px 1px;
+    line-height: 1;
+}
+
+/* Hide unavailable widget that are found with search in editor that are not allowed to be used there */
+.elementor-editor-active:not(.elementor-editor-product-archive) .elementor-panel .elementor-element:has(.et-elementor-product-builder-widget-icon-only),
+.elementor-editor-active:not(.elementor-editor-archive) .elementor-panel .elementor-element:has(.et-elementor-archive-builder-widget-icon-only),
+.elementor-editor-active:not(.elementor-editor-header) .elementor-panel .elementor-element:has(.et-elementor-header-builder-widget-icon-only),
+.elementor-editor-active:not(.elementor-editor-single-post) .elementor-panel .elementor-element:has(.et-elementor-post-widget-icon-only),
+.elementor-editor-active:not(.elementor-editor-product) .elementor-panel .elementor-element:has(.et-elementor-product-widget-icon-only),
+.elementor-editor-active:not(.elementor-editor-search-results) .elementor-panel .elementor-element:has(.et-elementor-search-results-widget-icon-only){
+    opacity: .5;
+    pointer-events: none;
+}
+
+#elementor-panel-page-settings .elementor-control-xstore_advanced_custom_css {
+    display: none;
+}
+
+/* make theme section with highest priority on top */
+#elementor-panel-categories {
+    display: flex;
+    flex-direction: column;
+}
+
+.elementor-editor-wp-page [id*=elementor-panel-category-eight_theme],
+.elementor-editor-wp-post [id*=elementor-panel-category-eight_theme],
+.elementor-editor-footer [id*=elementor-panel-category-eight_theme]{
+    order: -999;
+}
+
+.elementor-editor-product [id*=woocommerce-elements],
+.elementor-editor-product [id*=eight_theme],
+.elementor-editor-product-archive [id*=woocommerce-elements],
+.elementor-editor-product-archive [id*=eight_theme],
+.elementor-editor-archive [id*=eight_theme],
+.elementor-editor-archive [id*=theme-elements-archive] {
+    order: -1;
+}
+
+.elementor-context-menu-list [class*=etheme-live] [class*=shortcut] {
+    background: var(--e-a-bg-invert, #fff);
+    color: var(--e-a-bg-default, #000);
+    font-size: 8.5px;
+    line-height: 1;
+    font-family: var(--e-a-font-family);
+    padding: 4px 6px;
+    border-radius: 3px;
+    transition: all .3s linear;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+}
+
+.elementor-context-menu-list .etheme-menu-list__item--disabled,
+.etheme-elementor-add-section-area-button-disabled {
+    opacity: .5;
+    cursor: not-allowed;
+}
+
+.elementor-control-dynamic-value .elementor-control-tag-area ~ .select2 {
+    display: none;
+}
+
+/* Global information alert */
+.etheme-elementor-info-alert {
+    background: #000;
+    color: #fff;
+    width: calc(100vw - 40px);
+    max-width: fit-content;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 0 7px 0 rgb(0 0 0 / 10%);
+    bottom: 40px;
+    padding: 15px 30px 15px 20px;
+    transition: all .3s ease-in-out;
+    z-index: 999;
+    border-radius: 3px
+}
+
+.etheme-elementor-info-alert[data-type=success] {
+    background: var(--et_green-color, #2e7d32);
+    color: #fff;
+}
+
+.etheme-elementor-info-alert:not(.visible) {
+    transform: translateX(-50%) translateY(100%);
+    opacity: 0;
+    visibility: hidden
+}

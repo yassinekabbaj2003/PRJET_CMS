@@ -1,0 +1,42 @@
+.xstore-panel-grid-header .et-filters {
+    margin-inline-end: auto;
+}
+
+.xstore-panel-grid-header > div:not(:first-child) {
+    margin-inline-start: 20px;
+}
+
+.et-tabs-content,
+.xstore-panel-info-blocks {
+    margin-top: 0;
+}
+
+.xstore-panel-grid-item {
+    width: auto;
+    flex: 2;
+}
+
+.xstore-panel-grid-item:first-child {
+    flex: 3;
+}
+
+.hovered-search-stats {
+    position: absolute;
+    left: 0;
+    opacity: var(--stats-opacity, 0);
+    visibility: var(--stats-visibility, hidden);
+}
+
+h3:has(.hovered-search-stats) {
+    position: relative;
+}
+
+.xstore-panel-info-block:has(.hovered-search-stats):hover {
+    --stats-opacity: 1;
+    --stats-visibility: visible;
+}
+
+.xstore-panel-info-block:has(.hovered-search-stats):hover .hovered-search-stats+.et-counter {
+    opacity: 0;
+    visibility: hidden;
+}

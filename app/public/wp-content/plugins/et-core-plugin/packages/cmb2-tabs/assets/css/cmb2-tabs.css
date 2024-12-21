@@ -1,0 +1,73 @@
+.cmb-type-tabs .ui-widget-header {
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    padding: 0;
+}
+
+.cmb-type-tabs .ui-tabs .ui-tabs-panel {
+    padding: 1.8em 0 0;
+}
+
+.cmb-type-tabs .ui-widget-content {
+    border-radius: 0;
+    border: none;
+    padding-left: 0;
+    padding-right: 0;
+    font-size: inherit;
+    font-family: inherit;
+}
+
+.cmb-type-tabs .ui-tabs .ui-tabs-nav li {
+    position: relative;
+    float: none;
+    border: none;
+    margin: 0 !important;
+    padding: 0 !important;
+    background: no-repeat;
+    display: inline-block;
+}
+
+.cmb-type-tabs .ui-tabs .ui-tabs-nav li:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 2px;
+    background: var(--et_admin_dark-color, #222);
+    transition: all .3s linear;
+    width: 0%;
+}
+
+.cmb-type-tabs .ui-tabs .ui-tabs-nav li:hover:before,
+.cmb-type-tabs .ui-tabs .ui-tabs-nav li.ui-state-active:before {
+    width: 100%;
+    left: 0;
+    right: auto;
+}
+
+.cmb-type-tabs .ui-tabs .ui-tabs-nav {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    padding: 0;
+    border: 1px solid #e1e1e1;
+    overflow: auto;
+}
+
+.cmb-type-tabs .ui-tabs .ui-tabs-nav .ui-state-active .ui-tabs-anchor,
+.cmb-type-tabs .ui-tabs .ui-tabs-nav li:hover .ui-tabs-anchor {
+    color: var(--et_admin_dark-color, #222);
+}
+
+.cmb-type-tabs .ui-tabs .ui-tabs-nav .ui-tabs-anchor {
+    float: none;
+    display: inline-block;
+    padding: 15px;
+    text-decoration: none;
+    color: var(--et_admin_grey-color, #888);
+    transition: all .3s linear;
+    box-shadow: none;
+    outline: none;
+}

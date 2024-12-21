@@ -1,0 +1,82 @@
+.multiple-header-name {
+    left: auto;
+    right: 0;
+}
+
+@keyframes et-ltr {
+    0% {
+        opacity: 0;
+        visibility: hidden;
+        transform: translateX(20%);
+    }
+
+    100% {
+        transform: translateX(0%);
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+.et_column, .et_column_inner {
+    float: right;
+}
+
+.et_elements .et_column-inner:after,
+.et_products-elements .et_column-inner:after,
+.et_product-single:after {
+    right: auto;
+    left: 0;
+    background: -webkit-gradient(linear, left top, right top, from(var(--customizer-white-color, #fff)), color-stop(50%), to(var(--customizer-white01-color, rgba(255,255,255,.1))));
+    background: linear-gradient(to right, var(--customizer-white-color, #fff)), 50%, var(--customizer-white01-color, rgba(255,255,255,.1)));
+}
+
+.et_customizer-element .et_name .dashicons {
+    margin-left: 4px;
+    margin-right: 0;
+}
+
+.et_header-settings {
+    float: left;
+}
+
+.et_product-block:not([data-sticky="false"]) .et_column-settings .et-custom-toggle label .switch:before {
+    left: auto;
+    right: 0.4em;
+}
+
+.et_product-block:not([data-sticky="false"]) .et_column-settings .et-custom-toggle label .switch:after {
+    left: auto;
+    right: calc(100% - 1.7em*2 - 0.4em);
+    transform: translate3d(-100%, -50%, 0);
+}
+
+/* popup settings */
+#input_block_align {
+    margin-left: -3px;
+    margin-right: auto;
+}
+
+#et_popup-slider .wrapper, .et_column-settings .block-setting .wrapper {
+    padding: 0 7px 0 0;
+}
+
+/* multiple headers */
+.et_builder-multiple li .et_header-left {
+    margin-right: 0;
+    margin-left: auto;
+}
+
+.et_new-multiple-holder:not(.hidden) + .et_call-new-header {
+    margin-left: 0;
+    margin-right: 5px;
+}
+
+.et_header-add {
+    margin-left: 0;
+    margin-right: 5px;
+}
+
+.et_builder-multiple .et_condition select + select, .et_builder-multiple .et_condition select + .select2, .et_builder-multiple .et_condition select + .sub-items-section, .et_builder-multiple .et_condition .select2 + .sub-items-section {
+    margin-left: 0;
+    margin-right: 10px;
+}

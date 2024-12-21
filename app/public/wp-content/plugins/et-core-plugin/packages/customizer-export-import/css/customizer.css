@@ -1,0 +1,44 @@
+.cei-form {
+    position: absolute;
+    left: -99999px;
+}
+.cei-hr {
+    margin: 20px 0px 10px;
+}
+.cei-import-file {
+    background: var(--customizer-light-color, #eeeeee);
+    width: 100%;
+    margin-bottom: 15px;
+    font-size: calc(var(--customizer-ui-content-zoom, 1) * 12px);
+}
+.cei-import-images {
+    display: block;
+}
+.cei-uploading {
+    background: var(--customizer-light-color, #eeeeee);
+    display: none;
+    font-size: calc(var(--customizer-ui-content-zoom, 1) * 12px);
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+#customize-control-cei-setting .button {
+    margin: 15px 0;
+}
+
+#customize-control-cei-setting .button[name=cei-import-button] {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.wp-customizer:not([data-options-column]) #customize-control-cei-setting .button[name=cei-import-button] {
+    margin-top: 0;
+}
+
+.wp-customizer[data-options-column] #customize-control-cei-setting {
+    display: block;
+}
+
+.wp-customizer[data-options-column] #customize-control-cei-setting .cei-import-controls {
+    padding-top: 15px;
+}

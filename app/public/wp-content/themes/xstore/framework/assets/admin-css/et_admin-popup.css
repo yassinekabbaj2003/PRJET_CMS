@@ -1,0 +1,373 @@
+.et_panel-popup-on {
+    overflow: hidden;
+}
+
+.et_panel-popup-on:before {
+    content: '';
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,.5);
+    z-index: 9999;
+    animation: et-fadeIn .3s linear;
+}
+
+.et_panel-popup:empty {
+    border-radius: 50%;
+}
+
+.et_panel-popup:empty:not(.loading) {
+    display: none;
+}
+
+.et_panel-popup.loading:before {
+    content: '';
+    width: 16px;
+    height: 16px;
+    display: block;
+    border-radius: 50%;
+    animation: rotate .3s linear infinite;
+    border: 1px solid var(--et_admin_grey-color, #888);
+    border-left-color: var(--et_admin_border-color);
+}
+
+.et_panel-popup {
+    position: fixed;
+    z-index: 10000;
+    background: var(--et_admin_white2dark-color, #fff);
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 350px;
+    text-align: center;
+    box-shadow: 1px 1px 35px rgba(0,0,0,.3);
+    transition: all .3s linear;
+    animation: et-toTopSecond .3s linear, et-fadeIn .3s linear;
+}
+
+.et_panel-popup.closing {
+    animation: et-toTopSecond .3s linear, et-fadeIn .3s linear;
+    animation-direction: reverse;
+}
+
+.et_panel-popup.inactive {
+    animation: none;
+}
+
+@media only screen and (max-width: 768px) {
+    .et_panel-popup {
+        max-width: 70vw;
+    }
+}
+
+.et_panel-popup .with-scroll {
+    max-height: 180px;
+    overflow: hidden;
+    overflow-y: auto;
+    scrollbar-gutter: stable;
+}
+
+.et_panel-popup ol {
+    counter-reset: et_panel-popup-numeric-list-counter;
+    list-style: none;
+    margin: 0;
+}
+.et_panel-popup ol li {
+    position: relative;
+    font-size: 1rem;
+    line-height: 1.5;
+    counter-increment: et_panel-popup-numeric-list-counter;
+    padding-inline-start: calc(1.5em + 15px);
+    margin-bottom: 20px;
+}
+.et_panel-popup ol li::before {
+    content: counter(et_panel-popup-numeric-list-counter);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.5em;
+    height: 1.5em;
+    line-height: 1;
+    border-radius: 50%;
+    margin-inline-end: 15px;
+    border: 1px solid var(--et_admin_dark2white-color, var(--et_admin_dark-color, #333));
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.rtl .et_panel-popup ol li::before {
+    left: auto;
+    right: 0;
+}
+
+.et_panel-popup.style-2 {
+    /*max-width: 950px;*/
+    /*padding: 0;*/
+    /* same as size-lg */
+    max-width: 570px;
+    padding: 40px;
+    text-align: start;
+}
+
+.et_panel-popup.style-2 .image-block {
+    flex: 0 0 25%;
+    background: var(--et_admin_dark-color, #222);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.et_panel-popup.style-2 h4 {
+    font-size: 14px;
+}
+
+.et_panel-popup.size-lg {
+    max-width: 500px;
+    padding: 40px;
+}
+
+.et_panel-popup.size-lg ::-webkit-scrollbar {
+    display: none;
+}
+
+.et_panel-popup.auto-size {
+    max-width: unset;
+    width: auto;
+}
+
+.et_panel-popup input[type=checkbox] {
+    /*border-radius: 50%;*/
+    border-radius: 0;
+    outline: none;
+    box-shadow: none;
+    width: 1rem;
+    height: 1rem;
+}
+
+.et_panel-popup input[type=checkbox]:checked:before {
+    color: var(--et_admin_white2dark-color, #fff);
+    transform: scale(.75);
+    height: auto;
+    width: auto;
+    font-size: 21px;
+    content: "\f147";
+    margin: -3px 0 0 -4px;
+    font-family: 'dashicons';
+    line-height: 1;
+}
+
+.et_panel-popup input[type=checkbox]:checked {
+    background: var(--et_admin_dark2white-color, var(--et_admin_dark-color, #333));
+    border-color: var(--et_admin_dark2white-color, var(--et_admin_dark-color, #333));
+}
+
+.et_panel-popup .et_step-title {
+    font-size: 22px;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+.et-button.et-button-cancel {
+    position: fixed;
+    background-color: var(--et_admin_white2dark-color, #fff);
+    color: var(--et_admin_dark2white-color, var(--et_admin_dark-color, #333)) !important;
+    border-color: var(--et_admin_border-color);
+    left: calc(100% + 7px);
+    top: 0;
+    padding: 12px;
+    border-radius: 50%;
+    display: inline-flex;
+    font-size: 55%;
+    transform: none !important;
+}
+
+.et_panel-popup .spinner {
+    background: none;
+    margin: 0;
+    opacity: 1;
+    width: auto;
+    height: auto;
+    position: static;
+}
+
+.et_panel-popup .spinner .et-loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -12px;
+    width: 20px;
+    height: 20px;
+}
+
+.et_panel-popup img {
+    max-width: 100%;
+}
+
+.et_panel-popup .popup-import-head.with-bg p {
+    margin: 0;
+    font-size: 16px;
+}
+
+.et_panel-popup.size-lg .popup-import-head.with-bg p {
+    color: currentColor;
+    font-size: 22px;
+}
+
+.et_panel-popup .popup-import-head.with-bg {
+    margin: -20px -20px 20px;
+    background: #0073aa;
+    padding: 6px 0;
+    color: #fff;
+    border-radius: 4px 4px 0 0;
+}
+
+.et_panel-popup.size-lg .popup-import-head.with-bg {
+    margin: -41px -40px 50px;
+    padding: 8px 0;
+}
+
+.et_panel-popup.size-lg .popup-import-footer {
+    margin: 0 -40px -40px;
+    padding: 10px;
+    background: #ededed;
+}
+
+.et_panel-popup .et-message {
+    animation: et-fadeIn .3s linear;
+}
+
+.et_panel-popup label {
+    color: var(--et_admin_dark2white-color, currentColor);
+    cursor: pointer;
+}
+
+.et_panel-popup p, .et_panel-popup ul, .et_panel-popup ol {
+    margin: 0 0 20px;
+    font-size: 14px;
+}
+
+.et_panel-popup p:not(.et-message), .et_panel-popup ul, .et_panel-popup ol {
+    color: var(--et_admin_dark2white2-color, #555);
+}
+
+.et_panel-popup ul li {
+    position: relative;
+    margin: 10px 0 0;
+    line-height: 1.8;
+    width: 100%;
+}
+
+.et_panel-popup ul li.processing > span:first-child, .et_panel-popup ul li.processing > span[data-slug] {
+    opacity: .5;
+}
+
+.et_panel-popup ul li:last-child {
+    margin-bottom: 0;
+}
+
+@keyframes et-toTopSecond {
+    0% {
+        top: calc(50% + 30px);
+    }
+
+    100% {
+        top: 50%;
+    }
+}
+
+/* Popup style */
+.theme-builders-plugins.flex-wrap .theme-builders-plugin {
+    flex-basis: 100%;
+}
+.theme-builders-plugin {
+    position: relative;
+    padding: 20px;
+    border: 1px solid #e1e1e1;
+    border-radius: 5px;
+    flex: 1;
+}
+
+.theme-builders-plugin + .theme-builders-plugin {
+    margin-top: 20px;
+}
+
+@media only screen and (min-width: 769px) {
+    .theme-builders-plugins:has(.theme-builder-plugin-separator) .theme-builders-plugin + .theme-builders-plugin {
+        border-left: none;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .theme-builders-plugins {
+        flex-wrap: wrap;
+    }
+    .theme-builders-plugins:has(.theme-builder-plugin-separator) .theme-builders-plugin + .theme-builders-plugin {
+        border-top: none;
+    }
+    .theme-builders-plugin + .theme-builders-plugin:before {
+        top: 0;
+        left: 50%;
+    }
+}
+
+.theme-builders-plugin-details {
+    overflow: hidden;
+}
+
+.theme-builders-plugin-details h4:only-child {
+    margin: 0;
+}
+
+.et_panel-popup .theme-builders-plugin-details p {
+    font-size: 12px;
+}
+
+.et_panel-popup .theme-builders-plugin-details .et-message:not(:empty) {
+    margin-top: 10px;
+}
+
+.theme-builders-plugin-logo {
+    float: left;
+    margin-inline-end: 15px;
+    max-width: 30px;
+}
+
+.theme-builders-plugin-logo svg {
+    max-width: 100%;
+}
+
+.theme-builder-plugin-separator {
+    align-self: center;
+    margin: 0 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--et_admin_dark2white-color, var(--et_admin_dark-color, #222));
+}
+
+.et_panel-popup.style-2 .et_panel-popup-inner {
+    display: flex;
+}
+
+.et_panel-popup.style-2 .with-scroll {
+    max-height: 52vh;
+}
+
+.et_popup-theme-required_plugins h3 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.et_popup-theme-required_plugins .theme-builders-plugin {
+    padding: 10px 15px;
+}
+
+@media only screen and (min-width: 992px) and (max-height: 700px) {
+    .et_popup-theme-registration .signature-svg {
+        display: none;
+    }
+}

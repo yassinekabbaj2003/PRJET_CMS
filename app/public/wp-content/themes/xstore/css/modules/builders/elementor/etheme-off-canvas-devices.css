@@ -1,0 +1,240 @@
+@media (max-width: 767px) {
+  .etheme-elementor-off-canvas__wrapper:has(.etheme-elementor-off-canvas__toggle.elementor-hidden-mobile),
+  .etheme-elementor-off-canvas__wrapper:has(.etheme-elementor-off-canvas__toggle.elementor-hidden-phone) {
+    --toggle-button-alignment: initial;
+    --toggle-wrapper-display: block;
+    --off-canvas-alignment-transform: none;
+    --off-canvas-padding: 0px;
+    --off-canvas-close-display: none;
+    --off-canvas-color: inherit;
+    --off-canvas-background-color: none;
+    --off-canvas-content-height: unset;
+    --off-canvas-content-max-height: none;
+    --et_main-color-local: var(--et_main-color);
+    --et_dark-2-white-local: var(--et_dark-2-white);
+    --et_link-color-local: var(--et_link-color);
+    --et_font-color-local: var(--et_font-color);
+  }
+  .etheme-elementor-off-canvas__wrapper:has(.etheme-elementor-off-canvas__toggle.elementor-hidden-mobile) .etheme-elementor-off-canvas__container,
+  .etheme-elementor-off-canvas__wrapper:has(.etheme-elementor-off-canvas__toggle.elementor-hidden-phone) .etheme-elementor-off-canvas__container {
+    position: static;
+    -webkit-transform: none;
+            transform: none;
+    z-index: auto;
+    width: auto;
+    height: auto;
+    overflow: visible;
+  }
+  .etheme-elementor-off-canvas__wrapper:has(.etheme-elementor-off-canvas__toggle.elementor-hidden-mobile) .etheme-elementor-off-canvas__main,
+  .etheme-elementor-off-canvas__wrapper:has(.etheme-elementor-off-canvas__toggle.elementor-hidden-phone) .etheme-elementor-off-canvas__main {
+    overflow: visible;
+    opacity: 1;
+    visibility: visible;
+    position: static;
+    -webkit-box-shadow: none !important;
+            box-shadow: none !important;
+    width: auto;
+    height: auto;
+    min-height: unset;
+    font-size: inherit;
+    border: none !important;
+  }
+}
+@media (min-width: -1) and (max-width: -1) {
+  .etheme-elementor-off-canvas__wrapper:has(.etheme-elementor-off-canvas__toggle.elementor-hidden-mobile_extra) {
+    --toggle-button-alignment: initial;
+    --toggle-wrapper-display: block;
+    --off-canvas-alignment-transform: none;
+    --off-canvas-padding: 0px;
+    --off-canvas-close-display: none;
+    --off-canvas-color: inherit;
+    --off-canvas-background-color: none;
+    --off-canvas-content-height: unset;
+    --off-canvas-content-max-height: none;
+    --et_main-color-local: var(--et_main-color);
+    --et_dark-2-white-local: var(--et_dark-2-white);
+    --et_link-color-local: var(--et_link-color);
+    --et_font-color-local: var(--et_font-color);
+  }
+  .etheme-elementor-off-canvas__wrapper:has(.etheme-elementor-off-canvas__toggle.elementor-hidden-mobile_extra) .etheme-elementor-off-canvas__container {
+    position: static;
+    -webkit-transform: none;
+            transform: none;
+    z-index: auto;
+    width: auto;
+    height: auto;
+    overflow: visible;
+  }
+  .etheme-elementor-off-canvas__wrapper:has(.etheme-elementor-off-canvas__toggle.elementor-hidden-mobile_extra) .etheme-elementor-off-canvas__main {
+    overflow: visible;
+    opacity: 1;
+    visibility: visible;
+    position: static;
+    -webkit-box-shadow: none !important;
+            box-shadow: none !important;
+    width: auto;
+    height: auto;
+    min-height: unset;
+    font-size: inherit;
+    border: none !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .etheme-elementor-off-canvas__wrapper:has(.etheme-elementor-off-canvas__toggle.elementor-hidden-tablet) {
+    --toggle-button-alignment: initial;
+    --toggle-wrapper-display: block;
+    --off-canvas-alignment-transform: none;
+    --off-canvas-padding: 0px;
+    --off-canvas-close-display: none;
+    --off-canvas-color: inherit;
+    --off-canvas-background-color: none;
+    --off-canvas-content-height: unset;
+    --off-canvas-content-max-height: none;
+    --et_main-color-local: var(--et_main-color);
+    --et_dark-2-white-local: var(--et_dark-2-white);
+    --et_link-color-local: var(--et_link-color);
+    --et_font-color-local: var(--et_font-color);
+  }
+  .etheme-elementor-off-canvas__wrapper:has(.etheme-elementor-off-canvas__toggle.elementor-hidden-tablet) .etheme-elementor-off-canvas__container {
+    position: static;
+    -webkit-transform: none;
+            transform: none;
+    z-index: auto;
+    width: auto;
+    height: auto;
+    overflow: visible;
+  }
+  .etheme-elementor-off-canvas__wrapper:has(.etheme-elementor-off-canvas__toggle.elementor-hidden-tablet) .etheme-elementor-off-canvas__main {
+    overflow: visible;
+    opacity: 1;
+    visibility: visible;
+    position: static;
+    -webkit-box-shadow: none !important;
+            box-shadow: none !important;
+    width: auto;
+    height: auto;
+    min-height: unset;
+    font-size: inherit;
+    border: none !important;
+  }
+}
+@media (min-width: -1) and (max-width: -1) {
+  .etheme-elementor-off-canvas__wrapper:has(.etheme-elementor-off-canvas__toggle.elementor-hidden-laptop),
+  .etheme-elementor-off-canvas__wrapper:has(.etheme-elementor-off-canvas__toggle.elementor-hidden-tablet_extra) {
+    --toggle-button-alignment: initial;
+    --toggle-wrapper-display: block;
+    --off-canvas-alignment-transform: none;
+    --off-canvas-padding: 0px;
+    --off-canvas-close-display: none;
+    --off-canvas-color: inherit;
+    --off-canvas-background-color: none;
+    --off-canvas-content-height: unset;
+    --off-canvas-content-max-height: none;
+    --et_main-color-local: var(--et_main-color);
+    --et_dark-2-white-local: var(--et_dark-2-white);
+    --et_link-color-local: var(--et_link-color);
+    --et_font-color-local: var(--et_font-color);
+  }
+  .etheme-elementor-off-canvas__wrapper:has(.etheme-elementor-off-canvas__toggle.elementor-hidden-laptop) .etheme-elementor-off-canvas__container,
+  .etheme-elementor-off-canvas__wrapper:has(.etheme-elementor-off-canvas__toggle.elementor-hidden-tablet_extra) .etheme-elementor-off-canvas__container {
+    position: static;
+    -webkit-transform: none;
+            transform: none;
+    z-index: auto;
+    width: auto;
+    height: auto;
+    overflow: visible;
+  }
+  .etheme-elementor-off-canvas__wrapper:has(.etheme-elementor-off-canvas__toggle.elementor-hidden-laptop) .etheme-elementor-off-canvas__main,
+  .etheme-elementor-off-canvas__wrapper:has(.etheme-elementor-off-canvas__toggle.elementor-hidden-tablet_extra) .etheme-elementor-off-canvas__main {
+    overflow: visible;
+    opacity: 1;
+    visibility: visible;
+    position: static;
+    -webkit-box-shadow: none !important;
+            box-shadow: none !important;
+    width: auto;
+    height: auto;
+    min-height: unset;
+    font-size: inherit;
+    border: none !important;
+  }
+}
+@media (min-width: 1025px) and (max-width: 99999px) {
+  .etheme-elementor-off-canvas__wrapper:has(.etheme-elementor-off-canvas__toggle.elementor-hidden-desktop) {
+    --toggle-button-alignment: initial;
+    --toggle-wrapper-display: block;
+    --off-canvas-alignment-transform: none;
+    --off-canvas-padding: 0px;
+    --off-canvas-close-display: none;
+    --off-canvas-color: inherit;
+    --off-canvas-background-color: none;
+    --off-canvas-content-height: unset;
+    --off-canvas-content-max-height: none;
+    --et_main-color-local: var(--et_main-color);
+    --et_dark-2-white-local: var(--et_dark-2-white);
+    --et_link-color-local: var(--et_link-color);
+    --et_font-color-local: var(--et_font-color);
+  }
+  .etheme-elementor-off-canvas__wrapper:has(.etheme-elementor-off-canvas__toggle.elementor-hidden-desktop) .etheme-elementor-off-canvas__container {
+    position: static;
+    -webkit-transform: none;
+            transform: none;
+    z-index: auto;
+    width: auto;
+    height: auto;
+    overflow: visible;
+  }
+  .etheme-elementor-off-canvas__wrapper:has(.etheme-elementor-off-canvas__toggle.elementor-hidden-desktop) .etheme-elementor-off-canvas__main {
+    overflow: visible;
+    opacity: 1;
+    visibility: visible;
+    position: static;
+    -webkit-box-shadow: none !important;
+            box-shadow: none !important;
+    width: auto;
+    height: auto;
+    min-height: unset;
+    font-size: inherit;
+    border: none !important;
+  }
+}
+@media (min-width: -1) {
+  .etheme-elementor-off-canvas__wrapper:has(.etheme-elementor-off-canvas__toggle.elementor-hidden-widescreen) {
+    --toggle-button-alignment: initial;
+    --toggle-wrapper-display: block;
+    --off-canvas-alignment-transform: none;
+    --off-canvas-padding: 0px;
+    --off-canvas-close-display: none;
+    --off-canvas-color: inherit;
+    --off-canvas-background-color: none;
+    --off-canvas-content-height: unset;
+    --off-canvas-content-max-height: none;
+    --et_main-color-local: var(--et_main-color);
+    --et_dark-2-white-local: var(--et_dark-2-white);
+    --et_link-color-local: var(--et_link-color);
+    --et_font-color-local: var(--et_font-color);
+  }
+  .etheme-elementor-off-canvas__wrapper:has(.etheme-elementor-off-canvas__toggle.elementor-hidden-widescreen) .etheme-elementor-off-canvas__container {
+    position: static;
+    -webkit-transform: none;
+            transform: none;
+    z-index: auto;
+    width: auto;
+    height: auto;
+    overflow: visible;
+  }
+  .etheme-elementor-off-canvas__wrapper:has(.etheme-elementor-off-canvas__toggle.elementor-hidden-widescreen) .etheme-elementor-off-canvas__main {
+    overflow: visible;
+    opacity: 1;
+    visibility: visible;
+    position: static;
+    -webkit-box-shadow: none !important;
+            box-shadow: none !important;
+    width: auto;
+    height: auto;
+    min-height: unset;
+    font-size: inherit;
+    border: none !important;
+  }
+}

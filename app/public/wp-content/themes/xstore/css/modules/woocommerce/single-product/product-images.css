@@ -1,0 +1,27 @@
+/* single product gallery types */
+.swipers-couple-wrapper .swiper-wrapper img {
+  width: 100%;
+}
+.thumbnails_bottom_inside .swiper-control-bottom {
+  position: absolute;
+  bottom: 0;
+  padding: 20px;
+  left: 0;
+  right: 0;
+  margin: 0;
+}
+.double_image .main-images > div {
+  float: left;
+}
+.double_image .main-images > div:nth-child(2n+1) {
+  clear: both;
+}
+@media only screen and (max-width: 649px) {
+  .swiper-vertical-images .vertical-thumbnails,
+  .swiper-vertical-images .vertical-thumbnails-wrapper li {
+    margin-bottom: 0;
+  }
+}
+.swiper-entry.images-wrapper .swiper-slide.woocommerce-product-gallery .container-image-and-badge picture source {
+  display: none;
+}

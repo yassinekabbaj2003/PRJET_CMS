@@ -1,0 +1,218 @@
+/* fix for correct offsets for some elements (popup/canvas) */
+html:not(:has(#wpadminbar)) {
+    --wp-admin--admin-bar--height: 0px;
+}
+
+.elementor-add-et-button,
+.elementor-etheme-live-paste {
+    background-color: #222;
+    color: #fff;
+    z-index: auto;
+}
+
+.elementor-add-et-button:hover,
+.elementor-etheme-live-paste:hover {
+    background-color: #444;
+    color: #fff;
+}
+
+.elementor-add-section-area-button .mt-mes {
+    font-family: var(--e-a-font-family);
+}
+
+.elementor-etheme-live-paste i {
+    transform: scale(1.2);
+}
+
+.elementor-etheme-live-paste:hover i,
+.elementor-add-et-button:hover i {
+    animation: etheme-elementor-editor-icon-animation .4s forwards;
+}
+
+@-webkit-keyframes etheme-elementor-editor-icon-animation {
+    49% {
+        -webkit-transform: translate(-100%);
+        transform: translate(-100%)
+    }
+
+    50% {
+        opacity: 0;
+        -webkit-transform: translate(100%);
+        transform: translate(100%)
+    }
+
+    51% {
+        opacity: 1
+    }
+}
+
+@keyframes etheme-elementor-editor-icon-animation {
+    49% {
+        -webkit-transform: translate(-100%);
+        transform: translate(-100%)
+    }
+
+    50% {
+        opacity: 0;
+        -webkit-transform: translate(100%);
+        transform: translate(100%)
+    }
+
+    51% {
+        opacity: 1
+    }
+}
+
+.elementor-theme-builder-content-area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #888;
+    font-size: 36px;
+    cursor: default;
+    background: #e1e1e1;
+}
+
+/* Static block feature only */
+.et-elementor-editor-dark-light-switcher {
+    transition: all .3s linear;
+}
+
+.rtl .et-elementor-editor-dark-light-switcher {
+    right: auto;
+    left: 0;
+    transform: rotate(-90deg) translate(50%, 50%);
+}
+
+.et-elementor-editor-dark-light-switcher ~ .template-container .page-wrapper {
+    min-height: 100vh;
+}
+
+.et-elementor-editor-dark-light-switcher .switcher {
+    display: block;
+    cursor: pointer;
+    padding: 7px;
+    margin: 15px auto 20px;
+    width: 100px;
+    height: 40px;
+    min-width: unset;
+    border-radius: 30px;
+    color: #000;
+    background: #fff;
+    position: relative;
+    border: none;
+    box-shadow: 2px 0 12px 0 rgb(0 0 0 / 10%);
+}
+
+.single-etheme_slides .et-elementor-editor-dark-light-switcher .switcher {
+    margin-top: 0;
+}
+
+.et-elementor-editor-dark-light-switcher .switcher ::selection {
+    background: transparent;
+}
+
+.et-elementor-editor-dark-light-switcher .switcher.light-mode {
+    background: #000;
+    color: #fff;
+}
+
+.et-elementor-editor-dark-light-switcher .switcher span {
+    text-transform: uppercase;
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: .75em;
+    font-weight: 600;
+    z-index: 2;
+    transition: 0.25s;
+    letter-spacing: 1px;
+}
+
+.et-elementor-editor-dark-light-switcher .switcher .off {
+    left: auto;
+    right: 17px;
+}
+
+.et-elementor-editor-dark-light-switcher .switcher.dark-mode i {
+    left: calc(100% - 32px - 5px);
+}
+
+.et-elementor-editor-dark-light-switcher .switcher i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    border-radius: 50%;
+    background: #888;
+    color: #fff;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 5px;
+    transition: 0.25s;
+    width: 32px;
+    height: 32px;
+}
+
+.et-elementor-editor-dark-light-switcher .light-mode .on, .et-elementor-editor-dark-light-switcher .dark-mode .off {
+    color: transparent;
+}
+
+.et-elementor-editor-dark-light-switcher .switcher.light-mode i .light, .et-elementor-editor-dark-light-switcher .switcher.dark-mode i .dark {
+    display: none;
+}
+
+.et-elementor-editor-thumbnail-actions-wrapper {
+    text-align: center;
+    padding: 0 50px;
+    margin-bottom: 20px;
+}
+
+.et-elementor-editor-thumbnail-actions-wrapper ~ .template-container {
+    padding-top: 20px;
+}
+
+.et-elementor-editor-thumbnail-action {
+    font-size: 1rem;
+    height: auto;
+    cursor: pointer;
+    text-transform: none;
+    font-weight: normal;
+    background-color: var(--et_dark-color, #222);
+    color: #fff;
+    border: none;
+    padding: .75rem 2.2rem;
+    transition: all .3s linear;
+    border-radius: 4px;
+    margin: 0 3px;
+}
+
+.et-elementor-editor-thumbnail-action[data-action=remove] {
+    background: var(--et_red-color, #c62828);
+}
+
+/*.et-elementor-editor-thumbnail-action[data-action=settings] {*/
+/*    background: var(--et_blue-color, #1565c0);*/
+/*}*/
+
+.et-elementor-editor-thumbnail-action[data-action=settings_save][style] {
+    color: var(--et_dark-color, #222);
+    background: #e1e1e1;
+}
+.et-elementor-editor-thumbnail-action[data-action=settings_save]:not([style]) {
+    background: var(--et_green-color, #2e7d32);
+}
+
+.et-elementor-editor-thumbnail-action:hover {
+    opacity: .9
+}
+
+.et-elementor-editor-thumbnail-action .dashicons {
+    font-size: 1.2em;
+    width: .7em;
+    height: .7em;
+    vertical-align: -4px;
+    transition: none;
+    margin-right: 7px;
+}

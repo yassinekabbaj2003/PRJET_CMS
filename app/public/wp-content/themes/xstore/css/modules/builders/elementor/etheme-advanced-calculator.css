@@ -1,0 +1,27 @@
+.etheme-ac-wrapper label {
+  color: var(--et_dark-2-white);
+  font-size: calc(var(--form-label-size-proportion, 1.14) * 1rem);
+}
+.etheme-ac-wrapper select {
+  width: 100%;
+}
+.etheme-ac-form-controls label {
+  font-size: calc(var(--form-label-size-proportion, 1.14) * 1rem);
+}
+.etheme-ac-form-controls,
+.etheme-ac-button {
+  margin-bottom: var(--rows-gap, 20px);
+}
+.etheme-ac-button button {
+  width: 100%;
+}
+.etheme-ac-button .elementor-button-text {
+  -webkit-box-flex: unset;
+      -ms-flex-positive: unset;
+          flex-grow: unset;
+}
+.etheme-ac-result {
+  color: var(--et_dark-2-white);
+  text-align: center;
+  font-size: calc(var(--total-size-proportion, 1.5) * 1rem);
+}

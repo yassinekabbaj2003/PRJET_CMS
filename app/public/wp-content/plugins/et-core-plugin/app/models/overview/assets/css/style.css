@@ -1,0 +1,110 @@
+.xstore-dashboard-overview img {
+    max-width: 100%;
+}
+
+.xstore-dashboard-widget__table-zone {
+    display: table;
+}
+.xstore-dashboard-overview > div {
+    width: 100%;
+    margin: 0 -12px 0;
+    padding: 0 12px 0;
+}
+
+.xstore-dashboard-overview > div:not(:last-child) {
+    border-bottom: 1px solid #e1e1e1;
+    margin-bottom: 12px;
+    padding-bottom: 12px;
+}
+
+.xstore-dashboard-overview .xstore-overview__logo {
+    width: 30px;
+}
+
+.xstore-dashboard-overview .xstore-overview__logo img {
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+.xstore-dashboard-widget__table-zone > div {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.xstore-logo-wrapper {
+    display: inline-block;
+    line-height: 1;
+    vertical-align: middle;
+    position: relative;
+    padding-top: 30px;
+    overflow: hidden;
+    width: 30px;
+}
+
+.xstore-dashboard-overview .xstore-overview__versions {
+    padding: 0 10px;
+    font-size: 1.1em;
+    line-height: 1.5;
+}
+
+.xstore-dashboard-overview .xstore-overview__version {
+    display: block;
+}
+
+.xstore-dashboard-overview .xstore-overview__create {
+    text-align: end;
+    margin: -5px;
+}
+
+.xstore-dashboard-overview .xstore-overview__create .button {
+    margin: 5px;
+}
+
+#dashboard-widgets .xstore-dashboard-widget .xstore-overview__heading {
+    font-weight: 600;
+    margin-bottom: 13px;
+}
+
+#dashboard-widgets .xstore-dashboard-widget__table-zone .xstore-overview__heading {
+    margin-bottom: 0;
+}
+
+.xstore-overview__system-req-list {
+    max-height: 270px;
+    overflow: auto;
+}
+
+.xstore-overview__system-req .et-message:last-child {
+    margin-bottom: 0;
+}
+
+.xstore-overview__sales-booster > div:last-child {
+    text-align: end;
+    width: 50%;
+}
+
+.xstore-overview__footer ul {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    white-space: nowrap;
+    margin: -5px -10px;
+}
+.xstore-overview__footer ul li {
+    display: inline-block;
+    padding: 0 10px;
+    margin: 5px 0;
+}
+.xstore-overview__footer ul li:not(:last-child) {
+    border-inline-end: 1px solid #e1e1e1;
+}
+.xstore-overview__footer .dashicons {
+    font-size: 1.2em;
+    width: 1.2em;
+    height: 1.2em;
+    vertical-align: -2px;
+}
